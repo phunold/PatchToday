@@ -11,11 +11,11 @@ For prioritize the combination of a) the severity or impact to a system (provide
 
 ## Simple _(opinionated)_ Decision Matrix
 
-| _Severity_ (CVSS) | _Probability_ (EPPS) | Action                        |
-| ----------------- | -------------------- | ----------------------------- |
-| Critical/High     | High                 | FIX                           |
-| Critical/High     | Low                  | _(Watch)_ (add footnote here) |
-| Low               | High                 | _Caution!_                    |
-| Low               | Low                  | deprioritize                  |
+| _Severity_ (CVSS) | _Probability_ (EPPS) | Action       |
+| ----------------- | -------------------- | ------------ |
+| Critical/High     | High                 | FIX          |
+| Critical/High     | Low                  | _Watch_    |
+| Low               | High                 | _Caution!_   |
+| Low               | Low                  | deprioritize |
 
 [Read more](https://www.first.org/epss/user-guide) for more information.
