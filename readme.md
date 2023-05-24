@@ -1,7 +1,21 @@
-# Vanilla JavaScript App
+# "Do I need Patch Today?"
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build JavaScript apps in minutes. Use this repo with the [quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript) to build and customize a new static site.
+Vulnerability & Patching needs prioritization or a risk based approach.
 
-This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
+Different systems exists to help with prioritizing remediation efforts, namely:
 
-This repo has a dev container. This means if you open it inside a [GitHub Codespace](https://github.com/features/codespaces), or using [VS Code with the remote containers extension](https://code.visualstudio.com/docs/remote/containers), it will be opened inside a container with all the dependencies already installed.
+- [NIST National Vulnerabiltiy Database CVSS](https://nvd.nist.gov/) CVSS Severity (latest v3.1)
+- [FIRST EPSS](https://first.org/epss) Exploit Probability Scoring System
+
+For prioritize the combination of a) the severity or impact to a system (provided by CVSS rating) and b) the probability of exploitation or high likely a vulnerability is exploited in the next 30 days.
+
+## Simple _(opinionated)_ Decision Matrix
+
+| _Severity_ (CVSS) | _Probability_ (EPPS) | Action                        |
+| ----------------- | -------------------- | ----------------------------- |
+| Critical/High     | High                 | FIX                           |
+| Critical/High     | Low                  | _(Watch)_ (add footnote here) |
+| Low               | High                 | _Caution!_                    |
+| Low               | Low                  | deprioritize                  |
+
+[Read more](https://www.first.org/epss/user-guide) for more information.
